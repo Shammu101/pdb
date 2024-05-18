@@ -1,0 +1,73 @@
+
+==========================================================================================
+docker run --name some -p 5432:5432 -e POSTGRES_PASSWORD=shammu101 -d postgres
+
+psql -U postgres
+
+psql -U postgres -h localhost -p 5432
+
+===============================================================================================
+
+CREATE ROLE anwar WITH LOGIN PASSWORD 'shammu475';
+
+
+CREATE USER myuser WITH PASSWORD 'mypassword'
+
+==================================================================
+
+CREATE ROLE shammushaik WITH LOGIN PASSWORD 'shammu75'
+
+GRANT ALL PRIVILEGES ON DATABASE shammudb TO shammushaik
+
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE tablename TO shammushaik
+
+SELECT rolname FROM pg_roles
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+kubectl create secret docker-registry acr-secret \
+  --docker-server=mycontainer12ws.azurecr.io \
+  --docker-username=mycontainer12ws \
+  --docker-password=PpVJX5jSrVktLEzejf4H/d7U3Bhb/c3RTyiL9E1o/Q+ACRC1ZUBV \
+  --docker-email=shaikshammu101@gmail.com
+
+
+
+
+
+
+apiVersion: v1
+kind: Deployment
+metadata:
+  name: shammupod
+spec:
+  containers:
+  - name: mycont
+    image: mycontainer12ws.azurecr.io/mycontainer12ws:10
+  imagePullSecrets:
+  - name: myimg
+
+
+
+az acr repository show --name mycontainer12ws --repository mycontainer12ws:10
+
+kubectl delete pods --all
+
+
+
+  
+
+
+
